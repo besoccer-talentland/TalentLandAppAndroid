@@ -9,5 +9,7 @@
     <color name="besoccer_background_light">#FAFAFA</color>
     <color name="besoccer_background_dark">#101211</color>
     <color name="besoccer_surface_light">#FAFAFA</color>
-    <color name="besoccer_surface_dark">#101211</color>
+    <color name="besoccer_surface_dark">#373434</color>
+    <color name="match_card_background">#E2E2E2</color>
+    <color name="live_indicator_background">#1B5E20</color>
 </resources>

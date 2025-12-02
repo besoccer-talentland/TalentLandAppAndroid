@@ -3,6 +3,7 @@ package com.talentland.talentlandappandroid.presentation.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.talentland.talentlandappandroid.domain.repository.MatchRepository
+import com.talentland.talentlandappandroid.domain.usecase.GetMatchesUseCase
 import com.talentland.talentlandappandroid.presentation.ui.MatchUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,6 +20,7 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class MatchViewModel @Inject constructor(
+    private val getMatchesUseCase: GetMatchesUseCase,
     private val repository: MatchRepository
 ) : ViewModel() {
 
@@ -31,7 +33,7 @@ class MatchViewModel @Inject constructor(
     }
 
     private fun observeMatches() {
-        repository.getMatches()
+        getMatchesUseCase()
             .onEach { result ->
                 result.fold(
                     onSuccess = { matches ->

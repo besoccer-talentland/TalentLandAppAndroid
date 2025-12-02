@@ -10,7 +10,6 @@ import java.util.UUID
 
 private const val SCORE_SEPARATOR = "-"
 private const val DATE_FORMAT = "yyyy-MM-dd HH:mm"
-private const val DEFAULT_COMPETITION = "La Liga"
 private const val MIN_LIVE_MINUTE = 1
 
 fun MatchDto.toDomain(): Match {
@@ -25,9 +24,11 @@ fun MatchDto.toDomain(): Match {
         awayTeam = visitorName.trim(),
         homeScore = homeScore,
         awayScore = awayScore,
+        localShield = localShield.orEmpty(),
+        visitorShield = visitorShield.orEmpty(),
         status = status,
         date = formattedDate,
-        competition = DEFAULT_COMPETITION
+        liveMinute = liveMinute
     )
 }
 

@@ -12,7 +12,7 @@ import com.talentland.talentlandappandroid.core.CornerStyle
 abstract class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     protected fun applyCornerRadius(view: View, cornerStyle: CornerStyle) {
-        val radius = 8f.dpToPx()
+        val radius = 10f.dpToPx()
 
         if (view is MaterialCardView) {
             val shapeAppearanceModel = ShapeAppearanceModel.builder()
@@ -48,12 +48,13 @@ abstract class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
                 CornerStyle.TOP,
                 CornerStyle.BOTTOM,
                 CornerStyle.SINGLE,
-                CornerStyle.FULL -> 4f.dpToPx()
+                CornerStyle.FULL -> 2f.dpToPx()
 
-                else -> 4f
+                else -> 2f.dpToPx()
             }
             view.cardElevation = elevation
-            view.strokeWidth = 0
+            // No sobrescribir strokeWidth si ya está definido en el XML
+            // view.strokeWidth = 0
         }
     }
 

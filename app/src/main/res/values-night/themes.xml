@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Base.Theme.TalentLand" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="elevationOverlayColor">@android:color/darker_gray</item>
+        <item name="elevationOverlayEnabled">false</item>
         <item name="colorPrimary">@color/besoccer_green_secondary</item>
         <item name="colorOnPrimary">@android:color/white</item>
         <item name="colorPrimaryContainer">@color/besoccer_green_tertiary</item>

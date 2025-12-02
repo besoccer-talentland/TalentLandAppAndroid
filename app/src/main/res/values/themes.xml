@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Base.Theme.TalentLand" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="elevationOverlayColor">@android:color/white</item>
+        <item name="elevationOverlayEnabled">false</item>
         <item name="colorPrimary">@color/besoccer_green_primary</item>
         <item name="colorOnPrimary">@android:color/white</item>
         <item name="colorPrimaryContainer">@color/besoccer_green_dark</item>
@@ -15,19 +15,20 @@
         <item name="colorOnError">@android:color/white</item>
         <item name="colorErrorContainer">#FFDAD6</item>
         <item name="colorOnErrorContainer">#410002</item>
-        <item name="backgroundColor">@color/besoccer_background_light</item>
+        <item name="backgroundColor">#F5F5F5</item>
         <item name="colorOnBackground">#1F211F</item>
-        <item name="colorSurface">@color/besoccer_surface_light</item>
+        <item name="colorSurface">@color/match_card_background</item>
         <item name="colorOnSurface">#1F211F</item>
         <item name="colorSurfaceVariant">#DFE5DB</item>
         <item name="colorOnSurfaceVariant">#424940</item>
         <item name="colorOutline">#73796F</item>
         <item name="colorOutlineVariant">#C3C9BE</item>
-        <item name="android:colorBackground">@color/besoccer_background_light</item>
+        <item name="android:colorBackground">#F5F5F5</item>
         <item name="android:textColorPrimary">#1F211F</item>
         <item name="android:textColorSecondary">#424940</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.TalentLand" parent="Base.Theme.TalentLand" />

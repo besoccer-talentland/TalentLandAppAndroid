@@ -7,11 +7,13 @@ data class Match(
     val id: String,
     val homeTeam: String,
     val awayTeam: String,
+    val localShield: String,
+    val visitorShield: String,
     val homeScore: Int?,
     val awayScore: Int?,
     val status: MatchStatus,
     val date: String,
-    val competition: String
+    val liveMinute: Int?
 )
 
 enum class MatchStatus {

@@ -89,15 +89,16 @@ dependencies {
     implementation(libs.compose.ui.graphics)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
+    implementation(libs.compose.material.icons.extended)
     implementation(libs.compose.activity)
     implementation(libs.compose.navigation)
     implementation(libs.compose.viewmodel)
     implementation(libs.coil.compose)
-    
+    implementation(libs.coil.network.okhttp.v304)
+    implementation(libs.coil.ktor)
     // Coroutines
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
-    
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
