@@ -1,5 +1,9 @@
 ## TalentLand Android Workshop – Commit Levels
 
+Figma : https://www.figma.com/design/3aze8cxnM0hgyvpfab06Ff/Home?node-id=1-2&t=MFalMwgUYThwdSLn-1
+<img width="411" height="838" alt="image" src="https://github.com/user-attachments/assets/caab5b98-5af5-4b12-92d4-b45f31ff5d0c" />
+
+
 Este repo está preparado para que los asistentes se puedan enganchar al taller en distintos niveles de dificultad usando los commits.
 
 ### Nivel 1 – Base + Hello World
